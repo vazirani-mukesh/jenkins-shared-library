@@ -3,5 +3,5 @@
 import com.ual.Docker
 
 def call(String imageName) {
-    return this new Docker(this).buildImage(imageName)
+    return new Docker(this).buildImage(imageName)
 }
