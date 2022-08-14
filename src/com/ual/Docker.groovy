@@ -22,5 +22,9 @@ class Docker implements Serializable {
     def pushImage(String imageName) {
         script.sh "docker push $imageName"
     }
+    
+    def postJobCleanUp(String imageName) {
+        script.sh "docker rmi -f $imageName" 
+    }
 
 }
