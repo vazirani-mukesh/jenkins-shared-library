@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-import com.ual.Docker
+import com.abc.Docker
 
 def call(String imageName) {
   return new Docker(this).postJobCleanUp(imageName)
