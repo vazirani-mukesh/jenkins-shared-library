@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-package com.ual
+package com.abc
 
 class Docker implements Serializable {
     def script
